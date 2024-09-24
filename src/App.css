@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  color: #333;
+}
+
+h1 span {
+  font-size: 1.2rem;
+  vertical-align: super;
+}
+
+form {
+  margin: 20px 0;
+}
+
+.basic,
+.description {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Transactions List */
+.transactions {
+  margin-top: 20px;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.transaction:hover {
+  background-color: #f0f0f0;
+}
+
+.transaction .left {
+  flex-grow: 1;
+}
+
+.transaction .name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.transaction .description {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.transaction .right {
+  text-align: right;
+}
+
+.transaction .price {
+  font-size: 1.2rem;
+}
+
+.transaction .price.green {
+  color: #4CAF50;
+}
+
+.transaction .price.red {
+  color: #FF5252;
+}
+
+.transaction .datetime {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  main {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h1 span {
+    font-size: 1rem;
+  }
+}
